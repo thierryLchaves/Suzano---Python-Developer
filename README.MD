@@ -36,14 +36,56 @@ Neste repositório será adotada toda documentação em Markdown, sendo asssim s
 
     ```
 #### 3. Lista de conclusão de aulas
-- [X] Introdução ao Python
-- [X] Fundamentos do Python
-- [X] Estruturas de controle
-- [X] Estruturas de dados
-- [X] Funções
-- [X] Tratamento de erros e exceções
-- [X] Entradas/saídas
-- [X] Importação e criação de módulo
+- [ ]  <b> Introdução ao Ambiente Python e Projetos colaborativos  </b>
+    - [ ] Introdução ao Python com a Suzano 
+    - [ ] Ambiente de Desenvolvimento e Primeiros Passos com Python 
+    - [ ] Conhecendo a Linguagem de Programação Python 
+    - [X] Versionamento de Código com Git e Github
+    - [X] Desafios de Projetos: Crie um Portfólio Vencedor 
+    - [x] Contribuindo em um projeto Open Source no GitHUB
+- [ ] <b> Sintaxe Básico com Python </b>
+    - [ ] Tipos de Operadores com Python 
+    - [ ] Estrutura condicionais e de repetição em Python 
+    - [ ] Manipulando Strings com Python 
+    - [ ] Dominando Funções Python 
+    - [ ] Criando um Sistema Bancário com Python 
+- [ ] <b>Trabalhando com Coleções em Python </b>
+    - [ ] Trabalhando com Listas em Python 
+    - [ ] Conhecendo tuplas em Python 
+    - [ ] Exemplorando conjuntos em Python 
+    - [ ] Aprendendo a utilizar Dicionários em Python 
+    - [ ] Lidando com Data, Hora e Fuso Horário em Python 
+    - [ ] Otimizando Sistema Báncário com funções Python 
+    - [X] Desafios de código: Aperfeiçoe sua lógica e Pensamento computacional 
+    - [ ] Gestão e Controle de transações Bancárias. 
+- [ ] <b>Programação Orientada a Objetos com Python </b>
+    - [ ] Introdução à Porgramação Orientada a Objetos (POO) com Python 
+    - [ ] Aprenda o conceito de Herança com Python 
+    - [ ] Aplicando Encapsulamento em Python 
+    - [ ] Conhecendo Polimorfismo em Python 
+    - [ ] Interfaces e Classes Abstratas com Python 
+    - [ ] Modelando o Sistema Báncário em POO com Python 
+    - [ ] Criando um Pacote de Processamento de Imagens com Python 
+    - [ ] Fundamentos de POO em sistemas bancários 
+- [ ] <b>Produtividade com Microsoft Copilot Studio </b>
+    - [ ] Conhecendo o Microfost Copilot Studio 
+    - [ ] Trabalhando com Ambientes no Microfost Copilot Studio
+    - [ ] Criando seu primeiro copiloto no Microfost Copilot Studio
+    - [ ] Introdução aos tópicos no Microfost Copilot Studio
+    - [ ] Ramificando um tópico no Microfost Copilot Studio 
+    - [ ] Trabalhando com tópicos de Fallback do sistema no Microfost Copilot Studio
+    - [ ] Introdução a Entidades e variáveis no Microfost Copilot Studio
+    - [ ] Criando respostas generativas com IA no Microfost Copilot Studio
+    - [ ] Criando um copiloto com fluxo de conversa personalizado no Microfost Copilot Studio
+- [ ] <b>Integrando com Serviços de IA</b>
+    - [ ] Fundamentos da IA Generativa
+    - [ ] Conceitos Fundamentais de IA
+    - [ ] Fundamentos do Aprendizado de Máquina
+    - [ ] Conceitos de Processamento de Linguagem Natural 
+    - [ ] Análise de Sentimentos com Language Studio no Azure IA
+    - [ ] Trabalhando com Serviços Azure OpenAI
+
+
 
 
     <table style="text-align: center; width: 100%;"> 
@@ -58,6 +100,6 @@ Neste repositório será adotada toda documentação em Markdown, sendo asssim s
 Titulo: Readme
 Autor: Thierry Lucas Chaves  
 Data criacao: 2025-05-08  
-Data modificacao: 2025-05-19  
+Data modificacao: 2025-05-23  
 Versao: 1.0  
 ---
