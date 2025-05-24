@@ -60,6 +60,8 @@ Vscode é uma ótima ferramenta e será a nossa escolha por alguns motivos:
 A receita
 Programar consiste em informar ao computador uma sequência de rotinas que devem ser processadas. Imagine uma receita de bolo, precisamos saber os ingredientes e modo de preparo. Seguindo corretamente as instruções ao fim do processo teremos um bolo. Para criar a nossa receita de bolo em Python, precisamos criar um arquivo com extensão py. Com o arquivo criado podemos inserir nossos ingredientes e mode de preparo!
 
+--- 
+
 As respostas da aula 1 estão [aqui](IMGS)
 <table style="text-align: center; width: 100%;"> 
 <caption><b>Skls do projeto </b></caption>
@@ -67,8 +69,15 @@ As respostas da aula 1 estão [aqui](IMGS)
     <td style="text-align: center;">
     <img alt="Markdown" src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white"/>
     </td>
+    <td style="text-align: center;">
+    <img alt="Python" src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"/>
+    </td>
+    <td style="text-align: center;">
+    <img alt="VSCode" src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white"/>
+    </td>
 <tr> 
 </table>
+
 ---
 Titulo: Definindo o Ambiente e primeiros passos 
 
@@ -76,7 +85,7 @@ Autor: Thierry Lucas Chaves
 
 Data criacao: 2025-05-23  
 
-Data modificacao: 2025-05-23  
+Data modificacao: 2025-05-24 
 
-Versao: 1.0  
+Versao: 1.1  
 ---
