@@ -35,13 +35,13 @@ print("Hello World!")
 </table>
 
 ---
-Titulo: Criando um Sistema Bancario 
+Titulo: Criando um Sistema Bancario
 
-Autor: Thierry Lucas Chaves
+Autor: Thierry Lucas chaves
 
-Data criacao: 24/05/2025
+Data criacao: 26/05/2025
 
-Data modificacao: 24/05/2025
+Data modificacao: 26/05/2025
 
 Versao: 1.0  
 ---

@@ -3,6 +3,12 @@
 - [primeiro indice](#1-nome-1)
 ---
 ## 1. nome 1
+### Links Uteis
+- [Trilha no git](https://github.com/digitalinnovationone/trilha-python-dio)
+- [Documentação input](https://doc.python.org/3/library/functions.html#input)
+- [Documentação print](https://doc.python.org/3/library/functions.html#print) 
+---
+As respostas da aula 2 estão [aqui](IMGS)
 
 tabela exemplo 
 | | |
