@@ -6,35 +6,165 @@
 - [String múltiplas linhas](#4-string-múltiplas-linhas)
 ---
 ## 1. Conhecendo método úteis da classe string
+### Objetivo Geral 
+Conhecer métodos úteis para manipular objetos do tipo string, como interpolar valores de variáveis e entender como funciona o fatiamento. 
+
+A classe Stringo do Python é famosa por ser rica em métodos e cpossuir uma interface muito fácil de trabalhar. Em algumas  linguagens manipular sequência de caracteres não é um trabalho trivial, porém, em Python esse trabalho é muito simples.   
+#### Conhecendo métodos úteis de classe string  
+**Maiúscula, minúscula e título**  
+```
+curso = "pYtHon"
+print(curso.upper())
+>>> PYTHON 
+
+print(curso.lower())
+>>> python 
+
+print(curso.title())
+>>> Python
+```
+**Eliminando espaços em branco**  
+```
+curso = "   Python  "
+print(curso.strip())
+>>> "Python"
+
+print(curso.lstrip())
+>>> "Python " 
+
+print(curso.rstrip())
+>>> "   Python"
+```
+**Junções e centralização**  
+```
+curso = "Python"
+print(curso.center(10,"#"))
+>>> "##Python##"
+
+print(".".join(curso))
+>>> "P.y.t.h.o.n " 
+
+```
 ---
-## 2. Interpolação de váriaveis
+## 2. Interpolação de váriaveis  
+Em Python temos 3 formas de interpolar variáveis em strings, a primeira é usando o sinal %, a segunda é utilizando o método format e a última é utilizando f string. A primeira forma não é atualmente recomendada e seu uso em Python 3 é raro, por esse motivo iremos forcar nas 2 últimas.  
+**Old style %**  
+```
+nome = "Guilherme"
+idade = 28
+profissao = "Programador"
+linguagem = "Python"
+
+print("Olá, me camo %s. Eu tenho %d anos de didade, trabalho como %s e estou matriculado no curso de %s.
+% (nome,idade,profisao, lingaugem))
+>>>Olá, me chamo Guilherme. Eu tenho 28 anos de idade, trabalho como Programador e estou matriculado no curso de Python. 
+```
+**Método format**  
+```
+nome = "Guilherme"
+idade = 28
+profissao = "Programador"
+linguagem = "Python"
+
+print("Olá, me camo {}. Eu tenho {} anos de didade, trabalho como {} e estou matriculado no curso de {}.
+.format(nome,idade,profisao, lingaugem))
+
+print("Olá, me chamo {3}. Eu tenho {2} anos de idade, trabalho como {1} e utilizo e estou matriculado no curso de {}".format(linguagem, profissao,idade,nome)). 
+
+print("Olá, me chamo {nome}. Eu tenho {idade} anos de idade, trabalho com {profissao} e estou matriculado no curso de {linguagem}".format(nome = nome, idade=idade, profissao=profissao, linguagem=linguagem))
+
+print("Olá, me chamo {nome}. Eu tenho {idade} anos de idade, trabalho com {profissao} e estou matriculado no curso de {linguagem}".format(**pessoa))
+>>> Olá, me chamo Guilherme. Eu tenho 28 anos de idade, trabalho como Porgramador e estou matriculado no curso de Python.
+```
+
+**Método f-string**  
+```
+nome = "Guilherme"
+idade = 28
+profissao = "Programador"
+linguagem = "Python"
+
+print(f"Olá, me camo {nome}. Eu tenho {idade} anos de didade, trabalho como {profissao} e estou matriculado no curso de {linguagem}.")
+
+>>> Olá, me chamo Guilherme. Eu tenho 28 anos de idade, trabalho como Porgramador e utilizo e estou matriculado no curso de Python.
+```
+
+**Formatar strings com f-string**  
+```
+PI = 3.14159
+
+print(f"valor de PI: {PI:.2f})
+>>> "Valor de PI: 3.14"
+
+print(f"valor de PI: {PI:10.2f})
+>>> "Valor de PI:         3.14"
+```
 ---
 ## 3. Fatiamento de string
+Fatiamento de strings é uma técnica utilizada para retornar substrings (parte da string original), informando inicio (start), fim (stop) e passo (step): [start: stop[,step]].  
+```
+nome = "Guilherme Arthur de Carvalho"
+
+nome = [0]
+>>> "G
+
+nome = [:9]
+>>> "Guilherme"
+
+nome = [10:]
+>>> "Arthur de Carvalho"
+
+nome = [10:16]
+>>> "Arthur"
+
+nome = [10:16:2]
+>>> "Atu"
+
+nome = [:]
+>>> "Guilher Arthur de Carvalho"
+
+nome = [:: -1]
+>>> "ohlavraC ed ruhtrA emerehliuG"
+```
 ---
 ## 4. String múltiplas linhas
+Strings de múltiplas linhas são definidas informando 3 aspas simples ou duplas durante a atribuição Elas podem ocupar várias linhas do código, e todos os espaços em branco são incluídos na string final. 
+**String Triplas**  
+```
+nome = "Guilherme"
+
+mensagem = f"""
+Olá meu nome é {nome}, 
+Eu estou aprendendo Python
+"""
+>>>
+Olá meu nome é Guilherme
+Eu estou aprendendo Python
+```
+
+**String Triplas**  
+```
+nome = "Guilherme"
+
+mensagem = f'''
+  Olá meu nome é {nome}, 
+Eu estou aprendendo Python.
+    Essa mensagem tem diferente recuos.
+'''
+>>>
+  Olá meu nome é Guilherme
+Eu estou aprendendo Python
+    Essa mensagem tem diferente recuos. 
+```
 ---
 
 ### Links Uteis
 - [Trilha no git](https://github.com/digitalinnovationone/trilha-python-dio)
+- [String — Operações comuns de strings](https://doc.python.org/pt-br/3/library/string.html)
+- [Tipo sequência de texto](https://doc.python.org/pt-br/3/library/stdtypes.html#textseq)
 ---
 As respostas da aula 5 estão [aqui](IMGS)
 
-
-tabela exemplo 
-| | |
-| -- | -- |
-| nome | valor |
-
-<div style="border-left: 4px solid red; background-color:rgb(22, 23, 24); padding: 10px;">
-  <strong style="color: red;">Exemplo de alerta</strong>
-  <p> Somente um exemplo.</p>
-</div>
-
-exemplo código 
-```
-print("Hello World!")
-```
----
 <table style="text-align: center; width: 100%;"> 
 <caption><b>Skls do projeto </b></caption>
 <tr>
@@ -57,7 +187,7 @@ Autor: Thierry Lucas chaves
 
 Data criacao: 26/05/2025
 
-Data modificacao: 27/05/2025
+Data modificacao: 28/05/2025
 
 Versao: 1.0  
 ---

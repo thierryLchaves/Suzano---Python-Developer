@@ -38,8 +38,8 @@ Neste repositório será adotada toda documentação em Markdown, sendo asssim s
     ---
     titulo: "Nome do documentos"
     autor: "Thierry Lucas Chaves"
-    data_criacao: "AAAA-MM-DD"
-    data_modificacao: ""AAAA-MM-DD"
+    data_criacao: "DD-MM-AAAA"
+    data_modificacao: "DD-MM-AAAA"
     versao: "1.0"
     ---
 ```
@@ -54,8 +54,8 @@ Neste repositório será adotada toda documentação em Markdown, sendo asssim s
 - [ ] <b> Sintaxe Básico com Python </b>
     - [X] Tipos de Operadores com Python 
     - [X] Estrutura condicionais e de repetição em Python 
-    - [ ] Manipulando Strings com Python 
-    - [ ] Dominando Funções Python 
+    - [X] Manipulando Strings com Python 
+    - [x] Dominando Funções Python 
     - [ ] Criando um Sistema Bancário com Python 
 - [ ] <b>Trabalhando com Coleções em Python </b>
     - [ ] Trabalhando com Listas em Python 
@@ -109,7 +109,7 @@ ao executar o código o usuário deverá inserir os caminho absolutos da pasta q
 ---
 Titulo: Readme
 Autor: Thierry Lucas Chaves  
-Data criacao: 2025-05-08  
-Data modificacao: 2025-05-27
+Data criacao: 08-05-2025
+Data modificacao: 28-05-2025
 Versao: 1.0  
 ---
