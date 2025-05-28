@@ -1,8 +1,24 @@
 # Manipulando Strings
 ## Sumário 
-- [primeiro indice](#1-nome-1)
+- [Conhecendo método úteis da classe string](#1-conhecendo-método-úteis-da-classe-string)
+- [Interpolação de váriaveis](#2-interpolação-de-váriaveis)
+- [Fatiamento de string](#3-fatiamento-de-string)
+- [String múltiplas linhas](#4-string-múltiplas-linhas)
 ---
-## 1. nome 1
+## 1. Conhecendo método úteis da classe string
+---
+## 2. Interpolação de váriaveis
+---
+## 3. Fatiamento de string
+---
+## 4. String múltiplas linhas
+---
+
+### Links Uteis
+- [Trilha no git](https://github.com/digitalinnovationone/trilha-python-dio)
+---
+As respostas da aula 5 estão [aqui](IMGS)
+
 
 tabela exemplo 
 | | |
@@ -41,7 +57,7 @@ Autor: Thierry Lucas chaves
 
 Data criacao: 26/05/2025
 
-Data modificacao: 26/05/2025
+Data modificacao: 27/05/2025
 
 Versao: 1.0  
 ---

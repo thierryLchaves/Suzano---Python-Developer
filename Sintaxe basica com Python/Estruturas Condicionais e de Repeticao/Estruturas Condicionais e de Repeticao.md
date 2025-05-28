@@ -44,6 +44,7 @@ self.saldo -= valor
 # fim do bloco do if 
 # fim do bloco do método 
 ```
+---
 ## 2. Estruturas condicionais
 ### Objetivo Geral 
 O que são as estruturas condicionais e como utilizá-las 
@@ -87,25 +88,150 @@ else:
 ```
 
 #### if aninhado 
+Podemos criar estruturas condicionais aninhadas, para isso basta adicionar estruturas if/elif/else dentro do bloco de código de estruturas if/elif/else  .
+```
+if conta_normal:
+  if saldo >= saque:
+    print("Saque Realizado com sucesso!")
+  elif saque <= (saldo + cheque_especial):
+    print ("Saque realizado com uso do cheque especial!")
+elif conta_universitaria:
+  if saldo >= saque:
+    print("Saque realizado com sucesso!")
+  else:
+    print("Saldo insuficiente!")
+```
 #### if ternário
-## 3. Estruturas de Repetição
-
-tabela exemplo 
-| | |
-| -- | -- |
-| nome | valor |
-
-<div style="border-left: 4px solid red; background-color:rgb(22, 23, 24); padding: 10px;">
-  <strong style="color: red;">Exemplo de alerta</strong>
-  <p> Somente um exemplo.</p>
-</div>
-
-exemplo código 
+O if ternário permite escrever uma condição em uma única linha. Ele é composto por três partes, a primeira parte é o retorno caso a expressão retorne verdadeiro, a segunda parte é a expressão lógica e a terceira parte é o retorno caso a expressão não seja atendida.  
 ```
-print("Hello World!")
+status = "Sucesso" if saldo  >= saque else "Falha"
+print (f"{status} ao realizar saque)
 ```
+
 ---
+## 3. Estruturas de Repetição
+### Objetivo Geral
+Conhecer as estruturas de repetição for e while e quando utilizá-las.  
+#### O que são estruturas de repetição?
+São estruturas utilizadas para repetir um trecho de código um determinado número de vezes. Esse número pode ser conhecido previamente ou determinado através de uma expressão lógica.  
+**Exemplo sem repetição**  
+```
+# Receba um número do teclado e exiba os 2 números seguintes
+a = int(input("Informe um número inteiro: "))
+print(a)
 
+a += 1
+print(a)
+
+a += 1
+print(a)
+```  
+**Exemplo com repetição**
+```
+# Receba um número do teclado e exiba os 2 números seguintes
+a = int(input("Informe um número inteiro: "))
+print(a)
+
+repita 2 vezes:
+    a += 1 
+    print(a)
+```
+#### Comando for e a função built-in range
+**Comando for**  
+O comando for é usado para percorrer um objeto iterável. Faz sentido usar for quando sabemos o número exato de vezes que nosso bloco de código deve ser executado, ou quando queremos percorrer um objeto iterável.  
+**for**
+```
+texto = input("Informe um texto: ")
+VOGAIS = "AEIOU"
+
+for letra in texto:
+    if letra.upper() in VOGAIS:
+      print(letra, end="")
+
+print() # adiciona uma quebra de linha
+
+```
+**for/else**  
+```
+texto = input("Informe um texto: ")
+VOGAIS = "AEIOU"
+
+for letra in texto:
+    if letra.upper() in VOGAIS:
+      print(letra, end="")
+else:
+  print() # adiciona uma quebra de linha
+  print("Executa no final do laço")
+
+```
+**Função range**  
+Range é uma função built-in do Python, ela é usada para produzir uma sequência de números inteiros a partir de uma ínicio (inclusivo) para um fim (exclusivo).Se usarmos range (i,j) será produzido ` i,i+1,i+2,i+3...,j-1.` Ela recebe 3 argumento: *stop*(obrigatório), *start*(opicional) e *step* opcional.
+
+```
+# range(stop) -> range object 
+# range(start, stop[, step]) -> range object 
+
+list(range(4))
+>>> [0,1,2,3]
+```
+**Utilizando range com for**  
+```
+for numero in range(0,11):
+    print(numero, end=" ")
+>>> 0 1 2 3 4 5 6 7 8 9 10
+
+# Utilizando a tabuada do 5
+for numero in range (0,51,5):
+    print(numero, end=" ")
+>>> 0 5 10 15 20 25 30 35 40 45 50
+```
+
+#### Comando while
+O comando while é usado para repetir um bloco de código várias vezes. Faz sentido usar while quando não sabemos o número exato de vezes que nosso bloco de código deve ser executado.  
+```
+opcao = 1 
+
+while opcao != 0 
+    opcao = int(input("[1] Sacar \n[2] Extrato \n[0] Sair \n))
+
+    if opcao == 1:
+        print("Sacando...")
+    elif opcao == 2:
+        print("Exibindo o extrato...")
+```
+**while/else**  
+```
+opcao = 1 
+
+while opcao != 0 
+    opcao = int(input("[1] Sacar \n[2] Extrato \n[0] Sair \n))
+
+    if opcao == 1:
+        print("Sacando...")
+    elif opcao == 2:
+        print("Exibindo o extrato...")
+else:
+    print("Obrigado por usar nosso sistema bancário, até logo!")
+```
+**break** 
+``` 
+while  True:
+    numero = int(input("Informe um número: "))
+
+    if numero == 10:
+        break
+
+    print(numero)
+```
+**continue** 
+``` 
+for numero in range(100):
+
+    if numero == 12:
+        continue
+
+    print(numero)
+```
 ---
 ### Links Uteis
 - [Trilha no git](https://github.com/digitalinnovationone/trilha-python-dio)
@@ -134,7 +260,7 @@ Autor: Thierry Lucas chaves
 
 Data criacao: 26/05/2025
 
-Data modificacao: 26/05/2025
+Data modificacao: 27/05/2025
 
 Versao: 1.0  
 ---

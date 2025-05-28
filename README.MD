@@ -52,8 +52,8 @@ Neste repositório será adotada toda documentação em Markdown, sendo asssim s
     - [X] Desafios de Projetos: Crie um Portfólio Vencedor 
     - [x] Contribuindo em um projeto Open Source no GitHUB
 - [ ] <b> Sintaxe Básico com Python </b>
-    - [ ] Tipos de Operadores com Python 
-    - [ ] Estrutura condicionais e de repetição em Python 
+    - [X] Tipos de Operadores com Python 
+    - [X] Estrutura condicionais e de repetição em Python 
     - [ ] Manipulando Strings com Python 
     - [ ] Dominando Funções Python 
     - [ ] Criando um Sistema Bancário com Python 
