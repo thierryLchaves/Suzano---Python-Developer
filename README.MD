@@ -98,18 +98,18 @@ Neste repositório será adotada toda documentação em Markdown, sendo asssim s
 Para esse projeto foi criado o [arquivo de automação](automacao_estrutura_pasta/cria_lista.py), para facilitar a criação dos arquivos de notações que serão adotados nas aulas, bem como a estrutura padrão mencionada em [Estruturas de diretórios](#23--estrutura-padrão-de-sub-diretório) seguindo o mesmo padrão
 ao executar o código o usuário deverá inserir os caminho absolutos da pasta que corresponde ao módulo caso necessário modificar o arquivo de [template](automacao_estrutura_pasta/template_padrao.md)
 
-    <table style="text-align: center; width: 100%;"> 
-    <caption><b>Skls do projeto </b></caption>
-    <tr>
-        <td style="text-align: center;">
-        <img alt="Markdown" src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white"/>
-        </td>
-    <tr> 
-    </table>
+<table style="text-align: center; width: 100%;"> 
+<caption><b>Skls do projeto </b></caption>
+<tr>
+    <td style="text-align: center;">
+    <img alt="Markdown" src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white"/>
+    </td>
+<tr> 
+</table>
 ---
 Titulo: Readme
 Autor: Thierry Lucas Chaves  
 Data criacao: 2025-05-08  
-Data modificacao: 2025-05-24  
+Data modificacao: 2025-05-27
 Versao: 1.0  
 ---
