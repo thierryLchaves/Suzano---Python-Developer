@@ -43,20 +43,23 @@ Neste repositório será adotada toda documentação em Markdown, sendo asssim s
     versao: "1.0"
     ---
 ```
+
 ### 3. Lista de conclusão de aulas
-- [X]  <b> Introdução ao Ambiente Python e Projetos colaborativos  </b>
+- [X]  <b> [Introdução ao Ambiente Python e Projetos colaborativos](Introducao%20ao%20Ambiente%20Python%20e%20Projetos%20Colaborativos/)  </b>
     - [X] Introdução ao Python com a Suzano 
     - [X] Ambiente de Desenvolvimento e Primeiros Passos com Python 
     - [X] Conhecendo a Linguagem de Programação Python 
     - [X] Versionamento de Código com Git e Github
     - [X] Desafios de Projetos: Crie um Portfólio Vencedor 
     - [x] Contribuindo em um projeto Open Source no GitHUB
-- [X] <b> Sintaxe Básico com Python </b>
+
+- [X] <b> [Sintaxe Básico com Python](Sintaxe%20basica%20com%20Python/) </b>
     - [X] Tipos de Operadores com Python 
     - [X] Estrutura condicionais e de repetição em Python 
     - [X] Manipulando Strings com Python 
     - [x] Dominando Funções Python 
     - [X] Criando um Sistema Bancário com Python 
+
 - [ ] <b>Trabalhando com Coleções em Python </b>
     - [ ] Trabalhando com Listas em Python 
     - [ ] Conhecendo tuplas em Python 
@@ -66,6 +69,7 @@ Neste repositório será adotada toda documentação em Markdown, sendo asssim s
     - [ ] Otimizando Sistema Báncário com funções Python 
     - [X] Desafios de código: Aperfeiçoe sua lógica e Pensamento computacional 
     - [ ] Gestão e Controle de transações Bancárias. 
+
 - [ ] <b>Programação Orientada a Objetos com Python </b>
     - [ ] Introdução à Porgramação Orientada a Objetos (POO) com Python 
     - [ ] Aprenda o conceito de Herança com Python 
@@ -75,6 +79,7 @@ Neste repositório será adotada toda documentação em Markdown, sendo asssim s
     - [ ] Modelando o Sistema Báncário em POO com Python 
     - [ ] Criando um Pacote de Processamento de Imagens com Python 
     - [ ] Fundamentos de POO em sistemas bancários 
+
 - [ ] <b>Produtividade com Microsoft Copilot Studio </b>
     - [ ] Conhecendo o Microfost Copilot Studio 
     - [ ] Trabalhando com Ambientes no Microfost Copilot Studio
@@ -85,6 +90,7 @@ Neste repositório será adotada toda documentação em Markdown, sendo asssim s
     - [ ] Introdução a Entidades e variáveis no Microfost Copilot Studio
     - [ ] Criando respostas generativas com IA no Microfost Copilot Studio
     - [ ] Criando um copiloto com fluxo de conversa personalizado no Microfost Copilot Studio
+
 - [ ] <b>Integrando com Serviços de IA</b>
     - [ ] Fundamentos da IA Generativa
     - [ ] Conceitos Fundamentais de IA
@@ -106,10 +112,12 @@ ao executar o código o usuário deverá inserir os caminho absolutos da pasta q
     </td>
 <tr> 
 </table>
+
 ---
-Titulo: Readme
+Titulo: Readme  
 Autor: Thierry Lucas Chaves  
-Data criacao: 08-05-2025
-Data modificacao: 28-05-2025
-Versao: 1.0  
----
+Data criacao: 08-05-2025  
+Data modificacao: 28-05-2025  
+Versao: 2.0  
+
+--
