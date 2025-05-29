@@ -1,6 +1,7 @@
 import os
 import logging
 from datetime import date 
+import traceback
 
 def verifica_existencia(dir):
     """ Verifica a extistência de um arquivo em um diretório
@@ -14,6 +15,56 @@ def verifica_existencia(dir):
         return os.path.exists(dir)
     except Exception as e:
         logging.error(f"Ocorreu um erro ao verificar o diretório devido ao erro \n {e}")
+
+def exibite_lista (subdir, ie_opcao):
+    """Essa função é utilizada para retornar em formato de lista, tanto os nomes dos subdiretórios
+    existentes (pastas), quanto a sua posição em lista conforme estrutura padrão 
+    incializando da posição 0 
+
+    Args:
+        subdir (list): Uma lista de strings contendo os caminhos completos das pastas.
+        ie_opcao (number): Define o que será retornado. Pode ser 1 para "nomes",  2 para posições "posicoes" ou 0 para "ambos".
+
+    Returns:
+        list ou tuple: Dependendo do 'ie_opcao' especificado.
+                       Retorna listas vazias se a lista de entrada estiver vazia.
+    """
+    lista_final = []
+    numero_lista = []
+
+    try:
+        if not subdir:
+            if ie_opcao == "1":
+                return[]
+            elif ie_opcao == "2":
+                return[]
+            elif ie_opcao == "0":
+                logging.warning(f"Tipo de retorno '{ie_opcao}' inválido. Retornando listas vazias.")
+                return([],[])
+            
+        for posicao, caminho_completo in enumerate(subdir):
+            nome_final = os.path.basename(caminho_completo)
+            lista_final.append(nome_final)
+            numero_lista.append(posicao)
+    
+        if ie_opcao == "1":
+            return sorted(lista_final)
+        elif ie_opcao == "2":
+            return sorted(numero_lista)
+        elif ie_opcao == "0":
+            return(lista_final,numero_lista)
+        else:
+            logging.error(f"Tipo de retorno '{ie_opcao}' não reconhecido. Retornando ambos por padrão.")
+            return (lista_final, numero_lista)            
+
+    except Exception as e:
+        logging.error(f"Erro ao processar detalhes das pastas: {e}")
+        if ie_opcao == "1":
+            return []
+        elif ie_opcao == "2":
+            return []
+        else: 
+            return ([], [])
 
 def list_diretorios(dir,pastas_ignoradas):
     """ Listar as sub-pastas existentes dentro de um diretório
@@ -50,18 +101,27 @@ def cria_arquivo(subdir,caminho_tamplate,nome_autor):
         caminho_tamplate (str): deverá informar  o caminho completo do arquivo de template.
         nome_autor (str): Será armazenado o nome inputado pelo usuário para substituição no arquivo base
     """
+    lista_arquivo = exibite_lista(subdir,"1")
+
+    numero_lista = exibite_lista(subdir,"2")
+    teste = []
+
     with open(caminho_tamplate,'r',encoding="utf-8") as arquivo:
         conteudo = arquivo.read()
     try:
         if not subdir:
             return
         else:
-            for base_diretorio in subdir:
-                nm_arquivo_pasta = f"{os.path.basename(base_diretorio)}.md"
+            for nr_list,base_diretorio in enumerate(subdir):
+                nome_da_pasta = os.path.basename(base_diretorio)
+                novo_numero = nr_list+1
+                nm_arquivo_pasta = f"{novo_numero} .{nome_da_pasta.split("-",1)[1]}.md"
+
                 diretorio_novo_arquivo = os.path.join(base_diretorio,nm_arquivo_pasta)
                 dados_temlate = {
-                    "titulo_arquivo" : nm_arquivo_pasta.replace(".md",""),
+                    "titulo_arquivo" : nm_arquivo_pasta,
                     "nome_autor" : nome_autor,
+                    "x": novo_numero,
                     "data" : date.today().strftime("%d/%m/%Y")
                 }
                 conteudo_final = conteudo.format(**dados_temlate)
@@ -72,7 +132,9 @@ def cria_arquivo(subdir,caminho_tamplate,nome_autor):
                     else:
                         logging.error(f"Não foi possível criar o arquivo desejado")     
     except Exception as e:
-        logging.error(f"Não foi possivél executar o código pois {e}")
+        logging.error(f"Não foi possível executar o código devido a um erro inesperado: {e}")
+        logging.error("Detalhes completos do erro (traceback):")
+        traceback.print_exc() # Isso imprimirá o traceback completo
 
 def cria_pasta(subdir,pastas_padroes):
     """Cria uma lista de subdiretórios no dentro do diretório passado no argumento, 
@@ -103,6 +165,8 @@ def cria_pasta(subdir,pastas_padroes):
 
     except Exception as e:
         logging.error(f"Não foi possível criar as pastas pois {e}")
+
+
     
 if __name__ == '__main__':
     PASTAS_PADRAO = [
@@ -111,7 +175,18 @@ if __name__ == '__main__':
              "imgs"
     ]
 
-    nm_sub_pasta = input("Digite o caminho completo do diretório/subdiretório: ")
+    nm_sub_pasta = r'/home/tlchaves/Documentos/Estudos/DIO/Suzado_Bootcamp/Suzano---Python-Developer/Trabalhando com colecoes em Python'
+    # 
+    path_template = r'/home/tlchaves/Documentos/Estudos/DIO/Suzado_Bootcamp/Suzano---Python-Developer/automacao_estrutura_pasta/template_padrao.md'
+    nome_autor = input("Digite o nome a ficar no arquivo: ")
+    sub_diretorios = list_diretorios(nm_sub_pasta,PASTAS_PADRAO)
+    #print(exibite_lista(subdir=sub_diretorios,ie_opcao="2"))
+    cria_arquivo(sub_diretorios, path_template,nome_autor)
+
+
+
+
+    """nm_sub_pasta = 
     path_template = input("Digite o caminho completo do arquivo padrão: ")
     nome_autor = input("Digite o nome a ficar no arquivo: ")
     sub_diretorios = list_diretorios(nm_sub_pasta,PASTAS_PADRAO)
@@ -120,3 +195,6 @@ if __name__ == '__main__':
 
 #r'/home/tlchaves/Documentos/Estudos/DIO/Suzado_Bootcamp/Suzano---Python-Developer/Sintaxe basica com Python'
 #r'/home/tlchaves/Documentos/Estudos/DIO/Suzado_Bootcamp/Suzano---Python-Developer/automacao_estrutura_pasta/template_padrao.md'
+"""
+
+
