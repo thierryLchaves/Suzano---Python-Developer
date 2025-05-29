@@ -119,7 +119,7 @@ def cria_arquivo(subdir,caminho_tamplate,nome_autor):
 
                 diretorio_novo_arquivo = os.path.join(base_diretorio,nm_arquivo_pasta)
                 dados_temlate = {
-                    "titulo_arquivo" : nm_arquivo_pasta,
+                    "titulo_arquivo" : nm_arquivo_pasta.replace(".md",""),
                     "nome_autor" : nome_autor,
                     "x": novo_numero,
                     "data" : date.today().strftime("%d/%m/%Y")
@@ -175,13 +175,14 @@ if __name__ == '__main__':
              "imgs"
     ]
 
-    nm_sub_pasta = r'/home/tlchaves/Documentos/Estudos/DIO/Suzado_Bootcamp/Suzano---Python-Developer/Trabalhando com colecoes em Python'
-    # 
-    path_template = r'/home/tlchaves/Documentos/Estudos/DIO/Suzado_Bootcamp/Suzano---Python-Developer/automacao_estrutura_pasta/template_padrao.md'
+    nm_sub_pasta = r'C:\Users\tlchaves\Documents\Dio-cursos\Suzano - Python Developer\Trabalhando com colecoes em Python' 
+    path_template = r'C:\Users\tlchaves\Documents\Dio-cursos\Suzano - Python Developer\automacao_estrutura_pasta\template_padrao.md'
     nome_autor = input("Digite o nome a ficar no arquivo: ")
     sub_diretorios = list_diretorios(nm_sub_pasta,PASTAS_PADRAO)
-    #print(exibite_lista(subdir=sub_diretorios,ie_opcao="2"))
     cria_arquivo(sub_diretorios, path_template,nome_autor)
+    cria_pasta(sub_diretorios,PASTAS_PADRAO)
+
+
 
 
 
