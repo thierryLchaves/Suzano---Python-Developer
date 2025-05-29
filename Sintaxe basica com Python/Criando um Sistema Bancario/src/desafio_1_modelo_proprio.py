@@ -13,26 +13,70 @@ extrato = ""
 numero_saques = 0
 LIMITE_SAQUE = 3
 
-def sacar_dinheiro(valor_saque, saldo,limite, limite_qt_saque = LIMITE_SAQUE):
-    qt_saque = 0 
-    dinheiro_conta = 0 
+def depositar_dineiro(valor_deposito):
+    global saldo 
+    global extrato 
 
-    if qt_saque <= limite_qt_saque:
-        qt_saque += 1
+    if valor_deposito > 0:
+        saldo += valor_deposito
+        extrato += f"Depósito: R$ {valor_deposito:.2f}\n"
+    else:
+        print("Valor de depósito inválido. (Global)")
 
-        if valor_saque > saldo:
-            dinheiro_conta = f"Não foi possível sacar o dinheiro informado pois não tem saldo suficiente em conta"
-        elif valor_saque <= dinheiro_conta  and valor_saque > limite:
-            dinheiro_conta = f"Não foi possivel sacar a quantidade solicitada pois o valor exede o limite de {limite}"
-        elif valor_saque <= saldo and valor_saque <= limite:
-             dinheiro_conta = (saldo - valor_saque)
+def sacar_dinheiro (valor_saque):
+    global saldo
+    global numero_saques
+    global extrato
+
+    excedeu_saldo = valor_saque > saldo
+    excedeu_limite = valor_saque > limite
+    excedeu_saques = numero_saques >= LIMITE_SAQUE
+
+    if excedeu_saldo:
+
+        print(f"\n### Não foi possível sacar o dinheiro informado pois não tem saldo suficiente em conta ###")
+
+    elif excedeu_limite:
+
+        print(f"\n ### O valor de {valor_saque} solicitado no saque excede o limite de saques definido ###")
+
+    elif excedeu_saques:
+        print(f"\n ### Não foi possível realizar a transação pois foram o limite de saques no dia foi atingido ###")
+    
+    elif valor_saque > 0:
+        saldo -= valor_saque
+        numero_saques += 1
+        extrato += str(valor_saque)
+        print(f"\n ### Realizando saque de R$ {valor_saque:.2f}")
 
     else:
-        print(f"Valor de {LIMITE_SAQUE} saque diarios excedidos")
-    
-    return dinheiro_conta        
+        print(f"\n ### Operação falho! O valro informado para o valor de saque não é um valor valido")
+        
+def exibir_extrato():
+    print("EXTRATO".center(14,"#"))
+    print("Não foram realizadas movimentações." if not extrato else extrato)
+    print(f"\nSaldo atual: R$ {saldo:.2f}")
+    print("======================================\n")
 
-for limiter  in range(3):
-    result = sacar_dinheiro(valor_saque=500,saldo=saldo,limite=limite)
-    print(result)
-    limiter += 1
+
+while True:
+    opcao = input(menu)
+
+    if opcao == "d":
+        valor_deposito = float(input("Informe o valor do depósito: "))    
+        depositar_dineiro(valor_deposito=valor_deposito)
+
+    elif opcao == "s":
+
+            valor_saque = float(input("Informe o valor do saque: "))
+            sacar_dinheiro(valor_saque=valor_saque)
+
+    elif opcao == "e":
+        exibir_extrato()
+
+    elif opcao == "q":
+        print("Saindo do sistema. Obrigado!")
+        break
+
+    else:
+        print("Opção inválida, por favor selecione novamente a operação.")

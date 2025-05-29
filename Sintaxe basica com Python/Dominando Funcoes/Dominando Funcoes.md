@@ -149,7 +149,6 @@ salario_bonus(500) # 2500
 - [Trilha no git](https://github.com/digitalinnovationone/trilha-python-dio)
 
 ---
----
 As respostas da aula 6 estão [aqui](IMGS)
 
 <table style="text-align: center; width: 100%;"> l

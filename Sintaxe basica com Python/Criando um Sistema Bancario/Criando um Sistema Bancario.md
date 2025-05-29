@@ -24,27 +24,35 @@ Fomos contratados por um grande banco para desenvolver o seu novo sistema. Esse 
   1500.45 = R$ 1500.45
 
 ---
+  O acesso  do código solucionado se encontra tanto no [links](#links-uteis), quanto em [desafio solucionado](src/desafio_1_solucionado.py)
 
 
-
-## 2. Hands-on - Resolução do Desafio
 ## 3. Materiais de Apoio
 
-tabela exemplo 
-| | |
-| -- | -- |
-| nome | valor |
+Entendendo o Desafio
+Agora é a sua hora de brilhar e construir um perfil de destaque na DIO! Explore todos os conceitos explorados até aqui e replique (ou melhore, porque não?) este projeto prático. Para isso, crie seu próprio repositório e aumente ainda mais seu portfólio de projetos no GitHub, o qual pode fazer toda diferença em suas entrevistas técnicas 😎
 
-<div style="border-left: 4px solid red; background-color:rgb(22, 23, 24); padding: 10px;">
-  <strong style="color: red;">Exemplo de alerta</strong>
-  <p> Somente um exemplo.</p>
-</div>
+Já dominamos o universo do desenvolvimento Python e projeto "Criando um Sistema Bancário com Python" oferece uma experiência prática de desenvolvimento de software financeiro. Os participantes construirão um sistema completo, abordando funcionalidades como criação de contas, transações e segurança. É uma oportunidade para aprimorar habilidades de programação Python e compreender conceitos financeiros e de segurança.
 
-exemplo código 
-```
-print("Hello World!")
-```
+Repositórios Git
+O Git é um conceito essencial no mercado de trabalho atualmente, por isso sempre reforçamos sua importância em nossa metodologia educacional. Por isso, todo código-fonte desenvolvido durante este conteúdo foi versionado usando :
+
+[Repositório com todo o código-fonte desenvolvido nesta Formação](https://github.com/digitalinnovationone/trilha-python-dio)
+
+[ Aqui você tem acesso ao acesso do projeto em questão.](https://github.com/digitalinnovationone/trilha-python-dio/blob/main/00%20-%20Fundamentos/desafio.py)
+
+Para acessar os slides clique [AQUI](https://academiapme-my.sharepoint.com/:p:/g/personal/kawan_dio_me/Ef-dMEJYq9BPotZQso7LUCwBJd7gDqCC2SYlUYx0ayrGNQ?rtime=ZNjdz06e3Ug)
+ 
+
+Bons estudos 😉
+
 ---
+### Links Uteis
+- [Trilha no git](https://github.com/digitalinnovationone/trilha-python-dio)
+
+---
+As respostas da aula 7 estão [aqui](IMGS)
+
 <table style="text-align: center; width: 100%;"> 
 <caption><b>Skls do projeto </b></caption>
 <tr>

@@ -51,12 +51,12 @@ Neste repositório será adotada toda documentação em Markdown, sendo asssim s
     - [X] Versionamento de Código com Git e Github
     - [X] Desafios de Projetos: Crie um Portfólio Vencedor 
     - [x] Contribuindo em um projeto Open Source no GitHUB
-- [ ] <b> Sintaxe Básico com Python </b>
+- [X] <b> Sintaxe Básico com Python </b>
     - [X] Tipos de Operadores com Python 
     - [X] Estrutura condicionais e de repetição em Python 
     - [X] Manipulando Strings com Python 
     - [x] Dominando Funções Python 
-    - [ ] Criando um Sistema Bancário com Python 
+    - [X] Criando um Sistema Bancário com Python 
 - [ ] <b>Trabalhando com Coleções em Python </b>
     - [ ] Trabalhando com Listas em Python 
     - [ ] Conhecendo tuplas em Python 
