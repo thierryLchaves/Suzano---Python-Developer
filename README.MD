@@ -66,7 +66,7 @@ Neste repositório será adotada toda documentação em Markdown, sendo assim se
     - [X] Explorando conjuntos em Python 
     - [X] Aprendendo a utilizar Dicionários em Python 
     - [X] Lidando com Data, Hora e Fuso Horário em Python 
-    - [ ] Otimizando Sistema Bancário com funções Python 
+    - [X] Otimizando Sistema Bancário com funções Python 
     - [X] Desafios de código: Aperfeiçoe sua lógica e Pensamento computacional 
     - [ ] Gestão e Controle de transações Bancárias. 
 
