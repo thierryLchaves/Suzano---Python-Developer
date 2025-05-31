@@ -1,6 +1,6 @@
 # Notações gerais 
 
-Neste repositório será adotada toda documentação em Markdown, sendo asssim seguirei algumas diretrizes e comportamentos padrões
+Neste repositório será adotada toda documentação em Markdown, sendo assim seguirei algumas diretrizes e comportamentos padrões
 
 ## Diretrizes
 - ### 1. Do repositório
@@ -8,9 +8,9 @@ Neste repositório será adotada toda documentação em Markdown, sendo asssim s
 - ### 2. Do documento 
     O documento contendo a estrutura geral da aula será em formato `.Md(Markdown)`, e seguira a premissa de CamelCase em seu nome.  
     - #### 2.1. Das pastas
-         As pasta com os nomes da Materias serão iguais as aprensentadas no curso, porém sem acentuação 
+         As pasta com os nomes da Matérias serão iguais as apresentadas no curso, porém sem acentuação 
     - #### 2.2. Do Readme
-        Ao ser concluida uma nova aula deverá ser preenchido o [Check Box de conclusão](#3-lista-de-conclusão-de-aulas) informando que a aulas foi realizada.
+        Ao ser concluída uma nova aula deverá ser preenchido o [Check Box de conclusão](#3-lista-de-conclusão-de-aulas) informando que a aulas foi realizada.
     - ### 2.3.  Estrutura padrão de sub-diretório
         Em toda pasta deverão conter no mínimo **3**(três) outros sub-diretórios  
         - #### 2.3.1. Diretório de Imagens
@@ -61,22 +61,22 @@ Neste repositório será adotada toda documentação em Markdown, sendo asssim s
     - [X] Criando um Sistema Bancário com Python 
 
 - [ ] <b>Trabalhando com Coleções em Python </b>
-    - [ ] Trabalhando com Listas em Python 
-    - [ ] Conhecendo tuplas em Python 
-    - [ ] Exemplorando conjuntos em Python 
-    - [ ] Aprendendo a utilizar Dicionários em Python 
-    - [ ] Lidando com Data, Hora e Fuso Horário em Python 
-    - [ ] Otimizando Sistema Báncário com funções Python 
+    - [X] Trabalhando com Listas em Python 
+    - [X] Conhecendo tuplas em Python 
+    - [X] Explorando conjuntos em Python 
+    - [X] Aprendendo a utilizar Dicionários em Python 
+    - [X] Lidando com Data, Hora e Fuso Horário em Python 
+    - [ ] Otimizando Sistema Bancário com funções Python 
     - [X] Desafios de código: Aperfeiçoe sua lógica e Pensamento computacional 
     - [ ] Gestão e Controle de transações Bancárias. 
 
 - [ ] <b>Programação Orientada a Objetos com Python </b>
-    - [ ] Introdução à Porgramação Orientada a Objetos (POO) com Python 
+    - [ ] Introdução à Programação Orientada a Objetos (POO) com Python 
     - [ ] Aprenda o conceito de Herança com Python 
     - [ ] Aplicando Encapsulamento em Python 
     - [ ] Conhecendo Polimorfismo em Python 
     - [ ] Interfaces e Classes Abstratas com Python 
-    - [ ] Modelando o Sistema Báncário em POO com Python 
+    - [ ] Modelando o Sistema Bancário em POO com Python 
     - [ ] Criando um Pacote de Processamento de Imagens com Python 
     - [ ] Fundamentos de POO em sistemas bancários 
 
@@ -105,7 +105,7 @@ Para esse projeto foi criado o [arquivo de automação](automacao_estrutura_past
 ao executar o código o usuário deverá inserir os caminho absolutos da pasta que corresponde ao módulo caso necessário modificar o arquivo de [template](automacao_estrutura_pasta/template_padrao.md)
 
 <table style="text-align: center; width: 100%;"> 
-<caption><b>Skls do projeto </b></caption>
+<caption><b>Skils do projeto </b></caption>
 <tr>
     <td style="text-align: center;">
     <img alt="Markdown" src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white"/>
@@ -117,7 +117,7 @@ ao executar o código o usuário deverá inserir os caminho absolutos da pasta q
 Titulo: Readme  
 Autor: Thierry Lucas Chaves  
 Data criacao: 08-05-2025  
-Data modificacao: 28-05-2025  
+Data modificacao: 31-05-2025  
 Versao: 2.0  
 
 ---

@@ -89,6 +89,31 @@ def list_diretorios(dir,pastas_ignoradas):
     except Exception as e:
         logging.error(f"Aconteceu um erro pois {e}")
     return sub_diretorios
+def cria_pasta(subdir,pastas_padroes):
+    """Cria uma lista de subdiretórios no dentro do diretório passado no argumento, 
+    devera conter uma lista de nomes de pastas que serão criadas no diretório em questão. 
+    e também criar um arquivo gitkeep para manter a estruturação das pastas no git/github
+
+    Args:
+        subdir (str,list): deverá informar  o caminho da pasta raiz, subdiretórios a serem acessados
+        pastas_padroes (list): deverá informar a lista com os nomes das pastas que serão criados
+    """
+    try:
+        if not subdir:
+            return
+        else:
+            for base_diretorio in subdir:
+                for nm_pasta in pastas_padroes:
+                    caminho_novo_sub_diretorio = os.path.join(base_diretorio,nm_pasta)
+                    arquivo_git = ".gitkeep"
+                    if not os.path.exists(caminho_novo_sub_diretorio):
+                        os.makedirs(caminho_novo_sub_diretorio)
+                        if os.path.isdir(caminho_novo_sub_diretorio):
+                            diretorio_arquivos_finais = os.path.join(caminho_novo_sub_diretorio,arquivo_git)
+                            with open(diretorio_arquivos_finais,'w') as e:
+                                e.write(arquivo_git)
+    except Exception as e:
+        logging.error(f"Não foi possível criar as pastas pois {e}")
 
 def cria_arquivo(subdir,caminho_tamplate,nome_autor):
     """Essa função cria um arquivo no subdiretório existente na pasta raiz
@@ -136,35 +161,34 @@ def cria_arquivo(subdir,caminho_tamplate,nome_autor):
         logging.error("Detalhes completos do erro (traceback):")
         traceback.print_exc() # Isso imprimirá o traceback completo
 
-def cria_pasta(subdir,pastas_padroes):
-    """Cria uma lista de subdiretórios no dentro do diretório passado no argumento, 
-    devera conter uma lista de nomes de pastas que serão criadas no diretório em questão. 
-    e também criar um arquivo gitkeep para manter a estruturação das pastas no git/github
 
+
+
+def move_arquivo(subdir_alvo, subdir_destino):
+    """Essa função tem como objetivo de cópiar os códigos que foram clonados 
+    para suas respectivas pastas dos módulos de uma trilha, deverá ser executado 
+    até o momento para realizar o "copy" de todos os arquivos da pasta quando necessário
+    
     Args:
-        subdir (str,list): deverá informar  o caminho da pasta raiz, subdiretórios a serem acessados
-        pastas_padroes (list): deverá informar a lista com os nomes das pastas que serão criados
+        subdir_alvo (str): Informa o caminho da pasta que contem os códigos 
+        subdir_destino (str): informa o caminho da pasta que recebera esses arquivos.
     """
     try:
-        if not subdir:
-            return
-        else:
-            for base_diretorio in subdir:
-                for nm_pasta in pastas_padroes:
-                    caminho_novo_sub_diretorio = os.path.join(base_diretorio,nm_pasta)
-                    arquivo_git = ".gitkeep"
-                    if not os.path.exists(caminho_novo_sub_diretorio):
-                        os.makedirs(caminho_novo_sub_diretorio)
-                        if os.path.isdir(caminho_novo_sub_diretorio):
-                            diretorio_arquivos_finais = os.path.join(caminho_novo_sub_diretorio,arquivo_git)
-                            with open(diretorio_arquivos_finais,'w') as e:
-                                e.write(arquivo_git)
-          
+        for iten_alvo in os.listdir(subdir_alvo):
+            
+            dir_alvo = os.path.join(subdir_alvo,iten_alvo)
+            nome_dir = os.path.basename(dir_alvo)
 
-                 
+            with open(dir_alvo,'r',encoding="utf-8") as arquivo:
+                conteudo = arquivo.read()
+                        
+            dir_destino = os.path.join(subdir_destino,nome_dir)
+            with open(dir_destino,'w',encoding='utf-8') as novo_arquivo:
+                novo_arquivo.write(conteudo)
+            
 
     except Exception as e:
-        logging.error(f"Não foi possível criar as pastas pois {e}")
+        logging.error("Erro de iteração devido {e}")
 
 
     
@@ -175,27 +199,26 @@ if __name__ == '__main__':
              "imgs"
     ]
 
-    nm_sub_pasta = r'C:\Users\tlchaves\Documents\Dio-cursos\Suzano - Python Developer\Trabalhando com colecoes em Python' 
-    path_template = r'C:\Users\tlchaves\Documents\Dio-cursos\Suzano - Python Developer\automacao_estrutura_pasta\template_padrao.md'
-    nome_autor = input("Digite o nome a ficar no arquivo: ")
-    sub_diretorios = list_diretorios(nm_sub_pasta,PASTAS_PADRAO)
-    cria_arquivo(sub_diretorios, path_template,nome_autor)
-    cria_pasta(sub_diretorios,PASTAS_PADRAO)
+#    nm_sub_pasta =  input("informe o caminho da pas correspondente ao módulo do curso: ")
+#   path_template = input("informe o  caminho completo do arquivo padrão: ")
+#   nome_autor = input("informe o  nome a ficar no arquivo: ")
+#   sub_diretorios = list_diretorios(nm_sub_pasta,PASTAS_PADRAO)
+#   cria_arquivo(sub_diretorios, path_template,nome_autor)
+#    cria_pasta(sub_diretorios,PASTAS_PADRAO)
+    
+    ## Até o presente momento essa função somente deverá ser executada após os primeiros arquivos serem criados
+    nm_diretorio_repositorio = r'C:\Users\Thierry-G15\Documents\Estudos\DIO\trilha-dio\trilha-python-dio\04 - Data e hora\desafio'
+    nm_diretorio_destino =  r'C:\Users\Thierry-G15\Documents\Estudos\DIO\Suzano Python-Developer\Suzano---Python-Developer\Trabalhando com colecoes em Python\5-Lidando com Data Hora e Fuso Horario em Python\src\resp-desafio'
+    move_arquivo(nm_diretorio_repositorio,nm_diretorio_destino)
 
 
 
-
-
-
-    """nm_sub_pasta = 
-    path_template = input("Digite o caminho completo do arquivo padrão: ")
-    nome_autor = input("Digite o nome a ficar no arquivo: ")
-    sub_diretorios = list_diretorios(nm_sub_pasta,PASTAS_PADRAO)
-    cria_arquivo(sub_diretorios, path_template,nome_autor)
-    cria_pasta(sub_diretorios,PASTAS_PADRAO)
-
-#r'/home/tlchaves/Documentos/Estudos/DIO/Suzado_Bootcamp/Suzano---Python-Developer/Sintaxe basica com Python'
-#r'/home/tlchaves/Documentos/Estudos/DIO/Suzado_Bootcamp/Suzano---Python-Developer/automacao_estrutura_pasta/template_padrao.md'
-"""
-
+# Pasta com arquivos da trilha =
+# r'C:\Users\Thierry-G15\Documents\Estudos\DIO\trilha-dio\trilha-python-dio\04 - Data e hora'
+# Diretório padrão = 
+# r'C:\Users\Thierry-G15\Documents\Estudos\DIO\Suzano Python-Developer\Suzano---Python-Developer\Trabalhando com colecoes em Python\
+# Caminho do arquivo de template = 
+# r'C:\Users\tlchaves\Documents\Dio-cursos\Suzano - Python Developer\automacao_estrutura_pasta\template_padrao.md'
+# Diretório de código a ser copiado = 
+# r'C:\Users\Thierry-G15\Documents\Estudos\DIO\Suzano Python-Developer\Suzano---Python-Developer\Trabalhando com colecoes em Python\3-Explorando Conjuntos em Python\src'
 

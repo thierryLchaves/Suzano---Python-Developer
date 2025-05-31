@@ -1,10 +1,15 @@
 # {titulo_arquivo}
 ## Sumário 
 - [primeiro indice](#1-nome-1)
+- [segundo indice](#2-nome-2)
 ---
 ## 1. nome 1
 ### Objetivo Geral 
 #### Outro nome de subtópico
+---
+## 2. nome 2
+
+--- 
 ### Links Uteis
 - [Trilha no git](https://github.com/digitalinnovationone/trilha-python-dio)
 - [Documentação input](https://doc.python.org/3/library/functions.html#input)
@@ -28,7 +33,7 @@ print("Hello World!")
 ```
 ---
 <table style="text-align: center; width: 100%;"> 
-<caption><b>Skls do projeto </b></caption>
+<caption><b>Skils do projeto </b></caption>
 <tr>
     <td style="text-align: center;">
     <img alt="Markdown" src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white"/>
@@ -52,4 +57,5 @@ Data criacao: {data}
 Data modificacao: {data}
 
 Versao: 1.0  
+
 ---
