@@ -60,7 +60,7 @@ Neste repositório será adotada toda documentação em Markdown, sendo assim se
     - [x] Dominando Funções Python 
     - [X] Criando um Sistema Bancário com Python 
 
-- [ ] <b>Trabalhando com Coleções em Python </b>
+- [X] <b>Trabalhando com Coleções em Python </b>
     - [X] Trabalhando com Listas em Python 
     - [X] Conhecendo tuplas em Python 
     - [X] Explorando conjuntos em Python 
@@ -68,7 +68,7 @@ Neste repositório será adotada toda documentação em Markdown, sendo assim se
     - [X] Lidando com Data, Hora e Fuso Horário em Python 
     - [X] Otimizando Sistema Bancário com funções Python 
     - [X] Desafios de código: Aperfeiçoe sua lógica e Pensamento computacional 
-    - [ ] Gestão e Controle de transações Bancárias. 
+    - [X] Gestão e Controle de transações Bancárias. 
 
 - [ ] <b>Programação Orientada a Objetos com Python </b>
     - [ ] Introdução à Programação Orientada a Objetos (POO) com Python 
@@ -117,7 +117,7 @@ ao executar o código o usuário deverá inserir os caminho absolutos da pasta q
 Titulo: Readme  
 Autor: Thierry Lucas Chaves  
 Data criacao: 08-05-2025  
-Data modificacao: 31-05-2025  
+Data modificacao: 03-06-2025  
 Versao: 2.0  
 
 ---
