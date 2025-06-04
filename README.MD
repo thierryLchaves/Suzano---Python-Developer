@@ -71,7 +71,7 @@ Neste repositório será adotada toda documentação em Markdown, sendo assim se
     - [X] Gestão e Controle de transações Bancárias. 
 
 - [ ] <b>Programação Orientada a Objetos com Python </b>
-    - [ ] Introdução à Programação Orientada a Objetos (POO) com Python 
+    - [X] Introdução à Programação Orientada a Objetos (POO) com Python 
     - [ ] Aprenda o conceito de Herança com Python 
     - [ ] Aplicando Encapsulamento em Python 
     - [ ] Conhecendo Polimorfismo em Python 
@@ -117,7 +117,7 @@ ao executar o código o usuário deverá inserir os caminho absolutos da pasta q
 Titulo: Readme  
 Autor: Thierry Lucas Chaves  
 Data criacao: 08-05-2025  
-Data modificacao: 03-06-2025  
+Data modificacao: 04-06-2025  
 Versao: 2.0  
 
 ---
