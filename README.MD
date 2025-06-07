@@ -60,21 +60,21 @@ Neste repositório será adotada toda documentação em Markdown, sendo assim se
     - [x] Dominando Funções Python 
     - [X] Criando um Sistema Bancário com Python 
 
-- [ ] <b>Trabalhando com Coleções em Python </b>
+- [X] <b>Trabalhando com Coleções em Python </b>
     - [X] Trabalhando com Listas em Python 
     - [X] Conhecendo tuplas em Python 
     - [X] Explorando conjuntos em Python 
     - [X] Aprendendo a utilizar Dicionários em Python 
     - [X] Lidando com Data, Hora e Fuso Horário em Python 
-    - [ ] Otimizando Sistema Bancário com funções Python 
+    - [X] Otimizando Sistema Bancário com funções Python 
     - [X] Desafios de código: Aperfeiçoe sua lógica e Pensamento computacional 
-    - [ ] Gestão e Controle de transações Bancárias. 
+    - [X] Gestão e Controle de transações Bancárias. 
 
 - [ ] <b>Programação Orientada a Objetos com Python </b>
-    - [ ] Introdução à Programação Orientada a Objetos (POO) com Python 
-    - [ ] Aprenda o conceito de Herança com Python 
-    - [ ] Aplicando Encapsulamento em Python 
-    - [ ] Conhecendo Polimorfismo em Python 
+    - [X] Introdução à Programação Orientada a Objetos (POO) com Python 
+    - [X] Aprenda o conceito de Herança com Python 
+    - [X] Aplicando Encapsulamento em Python 
+    - [X] Conhecendo Polimorfismo em Python 
     - [ ] Interfaces e Classes Abstratas com Python 
     - [ ] Modelando o Sistema Bancário em POO com Python 
     - [ ] Criando um Pacote de Processamento de Imagens com Python 
@@ -117,7 +117,7 @@ ao executar o código o usuário deverá inserir os caminho absolutos da pasta q
 Titulo: Readme  
 Autor: Thierry Lucas Chaves  
 Data criacao: 08-05-2025  
-Data modificacao: 31-05-2025  
+Data modificacao: 06-06-2025  
 Versao: 2.0  
 
 ---
