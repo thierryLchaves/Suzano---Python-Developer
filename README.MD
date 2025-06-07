@@ -117,7 +117,9 @@ ao executar o código o usuário deverá inserir os caminho absolutos da pasta q
 Titulo: Readme  
 Autor: Thierry Lucas Chaves  
 Data criacao: 08-05-2025  
+
 Data modificacao: 06-06-2025  
+
 Versao: 2.0  
 
 ---
