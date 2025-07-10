@@ -1,24 +1,31 @@
-class Pessoa:
+# Lista para armazenar os produtos e preços
+carrinho = []
+total = 0.0
 
-    def __init__(self, nome = None,idade=None):
-        self.nome = nome
-        self.idade = idade
+# Entrada do número de itens
+n = int(input().strip())
 
-    @classmethod
-    def criar_de_data_nascimento(cls, ano, mes, dia, nome):
-
-        idade = 2024-ano
-
-        return cls(nome,idade)
+# Loop para adicionar itens ao carrinho
+for _ in range(n):
+    linha = input().strip()
     
-    @staticmethod
-    def e_maior_idade(idade):
-        return idade >= 18
+    # Encontra a última ocorrência de espaço para separar nome e preço
+    posicao_espaco = linha.rfind(" ")
+    
+    # Separa o nome do produto e o preço
+    item = linha[:posicao_espaco]
+    preco = float(linha[posicao_espaco + 1:])
+    
+    # Adiciona ao carrinho
+    carrinho.append((item, preco))
+    total += preco
 
-# p = Pessoa("thierry",29)
-# print(p.nome, p.idade)
+# Itera sobre cada item no carrinho para exibi-lo
+for item, preco in carrinho:
+    # Imprime o item e o preço formatado com 2 casas decimais
+    print(f"{item}: R${preco:.2f}")
 
-p2 = Pessoa.criar_de_data_nascimento(1996,3,21,'Thierry')
-print(p2.nome, p2.idade)
-print(Pessoa.e_maior_idade(18))
-print(Pessoa.e_maior_idade(8))
+# Imprime o total da compra, também formatado com 2 casas decimais
+print(f"Total: R${total:.2f}")
+
+
