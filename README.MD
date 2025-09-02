@@ -75,7 +75,7 @@ Neste repositório será adotada toda documentação em Markdown, sendo assim se
     - [X] Aprenda o conceito de Herança com Python 
     - [X] Aplicando Encapsulamento em Python 
     - [X] Conhecendo Polimorfismo em Python 
-    - [ ] Interfaces e Classes Abstratas com Python 
+    - [X] Interfaces e Classes Abstratas com Python 
     - [ ] Modelando o Sistema Bancário em POO com Python 
     - [ ] Criando um Pacote de Processamento de Imagens com Python 
     - [ ] Fundamentos de POO em sistemas bancários 
