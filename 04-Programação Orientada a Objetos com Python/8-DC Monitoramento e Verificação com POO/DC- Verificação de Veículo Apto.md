@@ -63,4 +63,4 @@ A tabela abaixo apresenta exemplos com alguns dados de entrada e suas respectiva
 
 __Atenção:__  É extremamente importante que as entradas e saídas sejam exatamente iguais às descritas na descrição do desafio de código.
 
-[Código](DC-Sistema%20de%20Pedidos%20de%20Restaurante.py)
+[Código](https://github.com/thierryLchaves/Suzano---Python-Developer/blob/fd9b021e6c898a1d1a61953e0c3a741a25a0f34d/04-Programa%C3%A7%C3%A3o%20Orientada%20a%20Objetos%20com%20Python/8-DC%20Monitoramento%20e%20Verifica%C3%A7%C3%A3o%20com%20POO/DC-%20Verifica%C3%A7%C3%A3o%20de%20Ve%C3%ADculo%20Apto.py)
