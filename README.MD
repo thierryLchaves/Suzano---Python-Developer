@@ -70,15 +70,15 @@ Neste repositório será adotada toda documentação em Markdown, sendo assim se
     - [X] Desafios de código: Aperfeiçoe sua lógica e Pensamento computacional 
     - [X] Gestão e Controle de transações Bancárias. 
 
-- [ ] <b>Programação Orientada a Objetos com Python </b>
+- [X] <b>Programação Orientada a Objetos com Python </b>
     - [X] Introdução à Programação Orientada a Objetos (POO) com Python 
     - [X] Aprenda o conceito de Herança com Python 
     - [X] Aplicando Encapsulamento em Python 
     - [X] Conhecendo Polimorfismo em Python 
     - [X] Interfaces e Classes Abstratas com Python 
-    - [ ] Modelando o Sistema Bancário em POO com Python 
-    - [ ] Criando um Pacote de Processamento de Imagens com Python 
-    - [ ] Fundamentos de POO em sistemas bancários 
+    - [X] Modelando o Sistema Bancário em POO com Python 
+    - [X] Criando um Pacote de Processamento de Imagens com Python 
+    - [X] Monitoramento e Verificação com POO
 
 - [ ] <b>Produtividade com Microsoft Copilot Studio </b>
     - [ ] Conhecendo o Microfost Copilot Studio 
@@ -118,7 +118,7 @@ Titulo: Readme
 Autor: Thierry Lucas Chaves  
 Data criacao: 08-05-2025  
 
-Data modificacao: 06-06-2025  
+Data modificacao: 06-09-2025  
 
 Versao: 2.0  
 
