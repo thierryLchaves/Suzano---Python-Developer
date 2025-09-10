@@ -81,7 +81,7 @@ Neste repositório será adotada toda documentação em Markdown, sendo assim se
     - [X] Fundamentos de POO em sistemas bancários 
 
 - [ ] <b>Produtividade com Microsoft Copilot Studio </b>
-    - [ ] Conhecendo o Microfost Copilot Studio 
+    - [X] Conhecendo o Microfost Copilot Studio 
     - [ ] Trabalhando com Ambientes no Microfost Copilot Studio
     - [ ] Criando seu primeiro copiloto no Microfost Copilot Studio
     - [ ] Introdução aos tópicos no Microfost Copilot Studio
