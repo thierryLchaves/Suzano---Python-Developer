@@ -82,7 +82,7 @@ Neste repositório será adotada toda documentação em Markdown, sendo assim se
 
 - [ ] <b>Produtividade com Microsoft Copilot Studio </b>
     - [X] Conhecendo o Microfost Copilot Studio 
-    - [ ] Trabalhando com Ambientes no Microfost Copilot Studio
+    - [X] Trabalhando com Ambientes no Microfost Copilot Studio
     - [ ] Criando seu primeiro copiloto no Microfost Copilot Studio
     - [ ] Introdução aos tópicos no Microfost Copilot Studio
     - [ ] Ramificando um tópico no Microfost Copilot Studio 
