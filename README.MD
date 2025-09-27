@@ -80,18 +80,18 @@ Neste repositório será adotada toda documentação em Markdown, sendo assim se
     - [X] Criando um Pacote de Processamento de Imagens com Python 
     - [X] Fundamentos de POO em sistemas bancários 
 
-- [ ] <b>Produtividade com Microsoft Copilot Studio </b>
+- [X] <b>Produtividade com Microsoft Copilot Studio </b>
     - [X] Conhecendo o Microfost Copilot Studio 
     - [X] Trabalhando com Ambientes no Microfost Copilot Studio
-    - [ ] Criando seu primeiro copiloto no Microfost Copilot Studio
-    - [ ] Introdução aos tópicos no Microfost Copilot Studio
-    - [ ] Ramificando um tópico no Microfost Copilot Studio 
-    - [ ] Trabalhando com tópicos de Fallback do sistema no Microfost Copilot Studio
-    - [ ] Introdução a Entidades e variáveis no Microfost Copilot Studio
-    - [ ] Criando Entidades Personalizadas no Microsoft Copilot Studio
-    - [ ] Criando Variáveis no Microsoft Copilot Studio
-    - [ ] Criando respostas generativas com IA no Microfost Copilot Studio
-    - [ ] Criando um copiloto com fluxo de conversa personalizado no Microfost Copilot Studio
+    - [X] Criando seu primeiro copiloto no Microfost Copilot Studio
+    - [X] Introdução aos tópicos no Microfost Copilot Studio
+    - [X] Ramificando um tópico no Microfost Copilot Studio 
+    - [X] Trabalhando com tópicos de Fallback do sistema no Microfost Copilot Studio
+    - [X] Introdução a Entidades e variáveis no Microfost Copilot Studio
+    - [X] Criando Entidades Personalizadas no Microsoft Copilot Studio
+    - [X] Criando Variáveis no Microsoft Copilot Studio
+    - [X] Criando respostas generativas com IA no Microfost Copilot Studio
+    - [X] Criando um copiloto com fluxo de conversa personalizado no Microfost Copilot Studio
 
 - [ ] <b>Integrando com Serviços de IA</b>
     - [ ] Fundamentos da IA Generativa
