@@ -209,7 +209,7 @@ def move_arquivo(subdir_alvo, subdir_destino):
 
 
 if __name__ == "__main__":
-    PASTAS_PADRAO = ["src", "imgs"]
+    PASTAS_PADRAO = ["imgs"]
 
     msg_sub_pasta = "informe o  nome do caminho absoluto onde será criado os arquivos: "
     nm_sub_pasta = input(msg_sub_pasta)

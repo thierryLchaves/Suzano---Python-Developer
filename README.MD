@@ -120,8 +120,8 @@ Titulo: Readme
 Autor: Thierry Lucas Chaves  
 Data criacao: 08-05-2025  
 
-Data modificacao: 06-06-2025  
+Data modificacao: 27-09-2025  
 
-Versao: 2.1  
+Versao: 2.2  
 
 ---
