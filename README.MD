@@ -93,13 +93,13 @@ Neste repositório será adotada toda documentação em Markdown, sendo assim se
     - [X] Criando respostas generativas com IA no Microfost Copilot Studio
     - [X] Criando um copiloto com fluxo de conversa personalizado no Microfost Copilot Studio
 
-- [ ] <b>Integrando com Serviços de IA</b>
-    - [ ] Fundamentos da IA Generativa
-    - [ ] Conceitos Fundamentais de IA
-    - [ ] Fundamentos do Aprendizado de Máquina
-    - [ ] Conceitos de Processamento de Linguagem Natural 
-    - [ ] Análise de Sentimentos com Language Studio no Azure IA
-    - [ ] Trabalhando com Serviços Azure OpenAI
+- [X] <b>Integrando com Serviços de IA</b>
+    - [X] Fundamentos da IA Generativa
+    - [X] Conceitos Fundamentais de IA
+    - [X] Fundamentos do Aprendizado de Máquina
+    - [X] Conceitos de Processamento de Linguagem Natural 
+    - [X] Análise de Sentimentos com Language Studio no Azure IA
+    - [X] Trabalhando com Serviços Azure OpenAI
 
 
 ## Observações:
@@ -120,7 +120,7 @@ Titulo: Readme
 Autor: Thierry Lucas Chaves  
 Data criacao: 08-05-2025  
 
-Data modificacao: 27-09-2025  
+Data modificacao: 04-10-2025  
 
 Versao: 2.2  
 
